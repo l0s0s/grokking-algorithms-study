@@ -22,12 +22,12 @@ func search(list []int, item int) *int {
 		if list[mid] > item {
 			high = mid + mid/2
 		} else {
-			low = mid - mid/2
+			low = mid + mid/2
 		}
 	}
 	return nil
 }
 
 func main() {
-	fmt.Println(*search(MyList, 5))
+	fmt.Println(*search(MyList, 9))
 }
