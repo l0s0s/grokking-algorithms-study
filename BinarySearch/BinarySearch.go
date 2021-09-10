@@ -1,14 +1,6 @@
 package BinarySearch
 
-import "fmt"
-
-const expected = 99
-
-var MyList = []int{1, 3, 5, 7, 9}
-
-
 func Search(list []int, item int) *int {
-	
 	low := 0
 	high := len(list) - 1
 
@@ -24,8 +16,4 @@ func Search(list []int, item int) *int {
 		}
 	}
 	return nil
-}
-
-func main() {
-	fmt.Println(*Search(MyList, 9))
 }

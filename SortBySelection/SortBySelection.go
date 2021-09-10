@@ -1,10 +1,11 @@
-package SortBySelection
+package sortbyselection
 
 func FindSmallest(arr []int) map[string]int {
 	smallest := map[string]int{
 		"index": 0,
 		"value": arr[0],
 	}
+
 	for i, v := range arr {
 		if v < smallest["value"] {
 			smallest["value"] = v
@@ -17,6 +18,7 @@ func FindSmallest(arr []int) map[string]int {
 func SelectionSort(arr []int) []int {
 	newArr := make([]int, len(arr))
 	length := len(arr)
+
 	for i := 0; i < length; i++ {
 		smallest := FindSmallest(arr)
 		newArr[i] = smallest["value"]

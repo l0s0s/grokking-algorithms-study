@@ -1,14 +1,14 @@
-package QuickSort_test
+package quicksort_test
 
 import (
 	"testing"
 
-	"github.com/l0s0s/JokesAPI/QuickSort"
+	quicksort "github.com/l0s0s/JokesAPI/QuickSort"
 	"github.com/stretchr/testify/assert"
 )
 
-func SelectionSortTest(t *testing.T) {
+func TestSelectionSortTest(t *testing.T) {
 	TestList := []int{5, 3, 6, 2, 10}
-	actual := QuickSort.Quicksort(TestList)
+	actual := quicksort.Quicksort(TestList)
 	assert.Equal(t, actual, []int{2, 3, 5, 6, 10})
 }
